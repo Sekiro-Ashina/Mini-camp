@@ -1,1 +1,1 @@
-console.log("project has started");
+console.log("Project has started but now it with nodemon");
