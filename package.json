@@ -4,8 +4,8 @@
   "description": "A Beginner version of BaseCamp",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js",
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js", 
     "format": "prettier --write ."
   },
   "keywords": [
