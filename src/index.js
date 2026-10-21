@@ -1,11 +1,21 @@
 import dotenv from "dotenv"
+import express from "express"
 
 dotenv.config({
     path : "./.env"
 });
 
-let myUserName = process.env.APP_USERNAME;
-let MyDataBase = process.env.DATABASE;
+const app = express()
+const port = process.env.PORT || 3000
 
-console.log(myUserName);
-console.log(MyDataBase);
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.get('/insta', (req,res) => {
+    res.send("Instagram page");
+})
+
+app.listen(port, () => {
+  console.log(`App listening on port  http:localhost/${port}`)
+})
