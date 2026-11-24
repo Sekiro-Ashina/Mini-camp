@@ -9,4 +9,4 @@ const healthCheck = ((req,res) =>{
         
     }
 })
-export default {healthCheck};
+export {healthCheck};
