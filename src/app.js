@@ -19,6 +19,12 @@ app.use(cors({
    }),
 );
 
+//import the routes
+import healthCheckRouter from "./routes/healthcheck.route.js";
+
+app.use("/api/v1/healthCheck", healthCheckRouter);
+
+
 app.get("/",(req,res) => {
     res.send("Home page is working!!!");
 });
